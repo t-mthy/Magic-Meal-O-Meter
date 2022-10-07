@@ -156,3 +156,33 @@ def excited_meal():
 def happy_meal():
     meal, recipe = random.choice(list(happy_mood.items()))
     meal_recipe_output(meal, recipe)
+
+
+def lazy_meal():
+    meal, recipe = random.choice(list(lazy_mood.items()))
+    meal_recipe_output(meal, recipe)
+
+
+def proud_meal():
+    meal, recipe = random.choice(list(proud_mood.items()))
+    meal_recipe_output(meal, recipe)
+
+
+def romantic_meal():
+    meal, recipe = random.choice(list(romantic_mood.items()))
+    meal_recipe_output(meal, recipe)
+
+
+def sad_meal():
+    meal, recipe = random.choice(list(sad_mood.items()))
+    meal_recipe_output(meal, recipe)
+
+
+def stressed_meal():
+    meal, recipe = random.choice(list(stressed_mood.items()))
+    meal_recipe_output(meal, recipe)
+
+
+def tired_meal():
+    meal, recipe = random.choice(list(tired_mood.items()))
+    meal_recipe_output(meal, recipe)
