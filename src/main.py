@@ -129,3 +129,4 @@ def adventurous_meal():
     meal, recipe = random.choice(list(adventurous_mood.items()))
     Element('meal').write(meal)
     Element('recipe').write(recipe)
+    document.getElementById('value3').href = recipe
