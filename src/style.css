@@ -1,3 +1,33 @@
+:root {
+    --gradish: linear-gradient(27deg,
+            #bdb2ff,
+            #cfbaf0,
+            #f1c0e8,
+            #ffcfd2,
+            #fde4cf,
+            #fbf8cc,
+            #b9fbc0,
+            #98f5e1,
+            #8eecf5,
+            #90dbf4,
+            #a3c4f3,
+            #a0c4ff);
+}
+
 body {
-    background: #A0FFE6;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: var(--gradish);
+    background-size: 1200%;
+    animation: bg-animation 72s infinite alternate;
+}
+
+@keyframes bg-animation {
+    0% {
+        background-position: left;
+    }
+
+    100% {
+        background-position: right;
+    }
 }
