@@ -1,6 +1,5 @@
 import random
 
-# dictonary of meals based on mood
 # 🤪
 adventurous_mood = {"German Potato Dumplings": "https://www.thespruceeats.com/bavarian-potato-dumplings-1447183",
                     "Portuguese Egg Tarts": "https://www.tastingtable.com/686035/portuguese-egg-tart-recipe-pastry/",
@@ -41,7 +40,6 @@ calm_mood = {"Clam Chowder": "https://damndelicious.net/2015/04/25/easy-clam-cho
              "Prosciutto Arugula Flatbread Pizza": "https://www.kyleecooks.com/prosciutto-arugula-flatbread-pizza/",
              "Smoked Salmon Bagel": "https://feelgoodfoodie.net/recipe/smoked-salmon-bagel/",
              "Charcuterie Board": "https://tastesbetterfromscratch.com/charcuterie-board/"}
-
 
 # 😁
 excited_mood = {"Lobster Roll": "https://www.foodiecrush.com/lobster-rolls/",
@@ -124,9 +122,17 @@ tired_mood = {"Avocado Toast": "https://cookieandkate.com/avocado-toast-recipe/"
               "Beef Chili": "https://www.thewholesomedish.com/the-best-classic-chili/"}
 
 
-# chooses random meal from the mood dict
+def meal_recipe_output(meal, recipe):
+    Element('meal').write(meal)
+    Element('recipe_output').write("🍽️ Recipe 📃")
+    document.getElementById('recipe_link').href = recipe
+
+
 def adventurous_meal():
     meal, recipe = random.choice(list(adventurous_mood.items()))
-    Element('meal').write(meal)
-    Element('recipe').write(recipe)
-    document.getElementById('value3').href = recipe
+    meal_recipe_output(meal, recipe)
+
+
+def angry_meal():
+    meal, recipe = random.choice(list(angry_mood.items()))
+    meal_recipe_output(meal, recipe)
