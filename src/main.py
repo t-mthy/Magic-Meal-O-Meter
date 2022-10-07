@@ -127,8 +127,5 @@ tired_mood = {"Avocado Toast": "https://cookieandkate.com/avocado-toast-recipe/"
 # chooses random meal from the mood dict
 def adventurous_meal():
     meal, recipe = random.choice(list(adventurous_mood.items()))
-    print(meal)
-    print(recipe)
-
-
-adventurous_meal()
+    Element('meal').write(meal)
+    Element('recipe').write(recipe)
