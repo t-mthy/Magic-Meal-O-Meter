@@ -136,3 +136,23 @@ def adventurous_meal():
 def angry_meal():
     meal, recipe = random.choice(list(angry_mood.items()))
     meal_recipe_output(meal, recipe)
+
+
+def bored_meal():
+    meal, recipe = random.choice(list(bored_mood.items()))
+    meal_recipe_output(meal, recipe)
+
+
+def calm_meal():
+    meal, recipe = random.choice(list(calm_mood.items()))
+    meal_recipe_output(meal, recipe)
+
+
+def excited_meal():
+    meal, recipe = random.choice(list(excited_mood.items()))
+    meal_recipe_output(meal, recipe)
+
+
+def happy_meal():
+    meal, recipe = random.choice(list(happy_mood.items()))
+    meal_recipe_output(meal, recipe)
