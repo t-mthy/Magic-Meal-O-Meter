@@ -91,3 +91,22 @@ body {
     --bs-btn-disabled-border-color: #0d6efd;
     --bs-gradient: none;
 }
+
+a:link {
+    text-decoration: none;
+    color: #0077b6;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #023e8a;
+}
+
+a:active {
+    text-decoration: none;
+    color: #0d6efd;
+}
