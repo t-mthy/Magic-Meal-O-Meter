@@ -33,6 +33,9 @@ body {
 }
 
 .btn-outline-moody {
+    --bs-btn-font-weight: 700;
+    --bs-btn-border-radius: 1.2rem;
+    --bs-btn-border-width: medium;
     --bs-btn-color: #5A189A;
     --bs-btn-border-color: #5A189A;
     --bs-btn-hover-color: #80FFDB;
@@ -50,6 +53,9 @@ body {
 }
 
 .btn-outline-moodi {
+    --bs-btn-font-weight: 700;
+    --bs-btn-border-radius: 1.2rem;
+    --bs-btn-border-width: medium;
     --bs-btn-color: #9D2113;
     --bs-btn-border-color: #9D2113;
     --bs-btn-hover-color: #ccff33;
@@ -67,6 +73,9 @@ body {
 }
 
 .btn-outline-moodee {
+    --bs-btn-font-weight: 700;
+    --bs-btn-border-radius: 1.2rem;
+    --bs-btn-border-width: medium;
     --bs-btn-color: #107460;
     --bs-btn-border-color: #107460;
     --bs-btn-hover-color: #ff9e00;
